@@ -12,7 +12,7 @@ dphi_0 = 0
 phi_tf = 0
 dphi_tf = 0
 
-N = 3*30
+N = 3*40
 
 using JuMP, Ipopt, PyCall, PyPlot, DelimitedFiles
 mod = Model(optimizer_with_attributes(Ipopt.Optimizer, "max_iter" => 1000, "mumps_mem_percent" => 8000))
